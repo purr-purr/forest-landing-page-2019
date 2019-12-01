@@ -24,7 +24,7 @@ body {
 .container {
 	width: 100%;
 	margin: 0 auto;
-	max-width: 590px; /*ширина по сетке*/
+	max-width: 590px;
 }
 
 /*NAV*/
@@ -36,33 +36,33 @@ body {
 	margin-top: 45px;
 }
 
-ul {
+.nav__ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-li {
-  	display: block;
- 	padding: 0 10px;
- 	color: #fff;
+.nav__li {
+	display: block;
+	padding: 0 10px;
+	color: #fff;
 	font-size: 13px;
 	font-family: sans-serif;
 	text-transform: uppercase;
 }
 
-li a {
+.nav__li a {
 	text-decoration: none;
- 	color: #fff;
- 	transition: .5s;  /*делает плавное появление из центра всего меню*/
- 	padding: 10px;
+	color: #fff;
+	transition: .2s; 
+	padding: 10px;
 }
 
-ul:hover li a {
+.nav__ul:hover .nav__li a {
 	filter: blur(3px);
 }
 
-ul:hover li a:hover {
+.nav__ul:hover .nav__li a:hover {
 	font-size: 15px;
 	filter: blur(0px);
 	background-color: #50c3af;
@@ -80,7 +80,6 @@ ul:hover li a:hover {
 	margin-top: 65px;
 	text-align: center;
 }
-
 
 .intro__inner {
 	padding-top: 245px;
@@ -130,12 +129,13 @@ ul:hover li a:hover {
 	border: 1px solid #50c3af;
 	border-radius: 30px;
 	color: #fff;
+	cursor: pointer;
 }
 
 .btn:hover {
 	background-color: #fff;
 	color: #333;
-	transition: .9s;
+	transition: .5s;
 }
 
 /*2en section COLORS*/
@@ -243,7 +243,7 @@ ul:hover li a:hover {
 .btn__template:hover {
 	background-color: #fff;
 	color: #333;
-	transition: .9s;
+	transition: .5s;
 }
 
 /*4en Fully Supported template*/
@@ -301,7 +301,7 @@ ul:hover li a:hover {
 .supported__btn:hover {
 	background-color: #fff;
 	color: #333;
-	transition: .9s;
+	transition: .5s;
 }
 
 /*5en Fully */
@@ -364,7 +364,7 @@ ul:hover li a:hover {
 
 .btn__fully:hover {
 	color: #333;
-	transition: .9s;
+	transition: .5s;
 }
 
 /*6en FeedBack*/
@@ -427,7 +427,7 @@ ul:hover li a:hover {
 .feedback__btn:hover {
 	background-color: #fff;
 	color: #333;
-	transition: .9s;
+	transition: .5s;
 }
 
 /* 7en section__themeforest*/
@@ -481,10 +481,19 @@ ul:hover li a:hover {
 	height: 222px;
 	background-color: #50c3af;
 }
+
 .all__logos {
 	text-align: center;
 	color: #fff;
 	padding-top: 51px;
+}
+
+.logos__header {
+	display: inline-flex;
+}
+
+.logos_icon {
+	padding-top: 2px;
 }
 
 .logos__wrapper {
@@ -493,16 +502,12 @@ ul:hover li a:hover {
 }
 
 .logos__title {
-	display: inline-flex;
-}
-
-.logos__title h3 {
 	font-weight: 700;
 	font-size: 16px;
 	padding-left: 10px;
 }
 
-.logos__title h3::after {
+.logos__title::after {
     content: "";
     display: block;
     width: 300px;
@@ -510,11 +515,6 @@ ul:hover li a:hover {
     margin: 22px auto;
     margin-left: -30px;
     background-color: #61c8b6;;
-}
-
-.logos_icon {
-	padding-top: 2px;
-
 }
 
 /*FOOTER*/
@@ -529,7 +529,6 @@ ul:hover li a:hover {
 	color: #aaacaf;
 	font-size: 13px;
 }
-
 
 
 /*
