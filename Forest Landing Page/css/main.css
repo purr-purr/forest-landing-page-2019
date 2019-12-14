@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5 {
   color: #50c3af; }
 
 /*Responsive*/
-/* 380px - 600px */
+/* 450px - 600px */
 @media screen and (max-width: 600px) {
   .intro__subtitle::after, .intro__subtitle::before {
     display: none; }
@@ -518,7 +518,13 @@ h1, h2, h3, h4, h5 {
 
   .themeforest__wrapper {
     margin-top: 15px; } }
-/* 760px - 990px */
-/* 660px - 760px */
+/* 320px - 450px */
+@media screen and (max-width: 450px) {
+  .nav__ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+  .nav__li {
+    margin-top: 12px; } }
 
 /*# sourceMappingURL=main.css.map */

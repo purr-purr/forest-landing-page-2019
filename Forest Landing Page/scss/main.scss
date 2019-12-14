@@ -471,6 +471,8 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+// Socials Links
+
 .socials {
 	font-size: 22px;
 }
@@ -495,7 +497,7 @@ h1, h2, h3, h4, h5 {
 
 /*Responsive*/
 
-/* 380px - 600px */
+/* 450px - 600px */
 @media screen and (max-width: 600px) {
 	.intro__subtitle::after, .intro__subtitle::before {
 		display: none;
@@ -529,11 +531,13 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
-/* 760px - 990px */
-@media screen and (max-width: 990px) {
-}
-
-/* 660px - 760px */
-@media screen and (max-width: 760px) {
+/* 320px - 450px */
+@media screen and (max-width: 450px) {
+	.nav__ul {
+		flex-wrap: wrap;
+	}
+	.nav__li {
+		margin-top: 12px;
+	}
 }
 
